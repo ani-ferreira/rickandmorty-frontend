@@ -1,6 +1,6 @@
 # Rick and Morty App
 
-> Ver personajes de la serie y guardar favoritos en base de datos.
+> Ver personajes de la serie Rick and Morty y guardar favoritos en base de datos.
 
 ## Table of Contents
 
@@ -46,17 +46,19 @@
 
 ## Features
 
-- Ver, filtrar y borrar personajes
-- Rutas
-- Redux
+- Ver, filtrar y borrar personajes 
+- Estado global con Redux
 - Backend Node.js Express.js
-- Guarda datos en MongoDB
+- Base de datos en MongoDB
 
 
 ## Video demo
 
 
-https://user-images.githubusercontent.com/73915239/166865022-1527dd18-0ab4-41e7-8d00-1829089878ed.mp4
+
+https://user-images.githubusercontent.com/73915239/167061938-5911dc77-5454-46cd-bf6c-94e704e41cf9.mp4
+
+
 
 
 ## Setup
