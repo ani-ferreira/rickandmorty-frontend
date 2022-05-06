@@ -1,17 +1,4 @@
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { deleteFav } from "../Store/favsActions";
-
 const FavCharacter = (props) => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const handleDelete = (id) => {
-    dispatch(deleteFav(id));
-
-    navigate("/");
-  };
-
   let id = props.mongoid;
 
   return (
@@ -24,7 +11,7 @@ const FavCharacter = (props) => {
           <button
             type="button"
             className="btn btn-outline-danger"
-            onClick={() => handleDelete(id)}
+            onClick={() => props.handleDelete(id)}
           >
             Eliminar de favoritos
           </button>

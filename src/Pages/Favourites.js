@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import FavCharacter from "../Components/FavCharacter";
 import { useSelector, useDispatch } from "react-redux";
-import { setFavs } from "../Store/favsActions";
+import { setFavs, deleteFav } from "../Store/favsActions";
 import Loader from "../Components/Layout/LoaderImg";
 
 const Favourites = () => {
@@ -12,6 +12,11 @@ const Favourites = () => {
   }, [dispatch]);
 
   const favourites = useSelector((state) => state.favsReducer.favs);
+
+  const handleDelete = async (id) => {
+    await dispatch(deleteFav(id));
+    dispatch(setFavs());
+  };
 
   return (
     <>
@@ -26,6 +31,7 @@ const Favourites = () => {
               name={fav.name}
               image={fav.image}
               mongoid={fav._id}
+              handleDelete={handleDelete}
             />
           ))}
         </div>
