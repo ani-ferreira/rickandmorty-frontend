@@ -46,9 +46,9 @@
 
 ## Features
 
-- Ver, filtrar y borrar personajes 
+- React frontend para ver, filtrar y borrar personajes 
 - Estado global con Redux
-- Backend Node.js Express.js
+- Backend con Node.js Express.js
 - Base de datos en MongoDB
 
 
