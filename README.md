@@ -50,6 +50,7 @@
 - Estado global con Redux
 - Backend con Node.js Express.js
 - Base de datos en MongoDB
+- Alertas con libreria toastify
 
 
 ## Video demo
