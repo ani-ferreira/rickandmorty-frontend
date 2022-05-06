@@ -10,7 +10,7 @@ const Character = (props) => {
 
           <Link
             to={`personaje/${props.id}`}
-            className="btn btn-outline-success"
+            className="btn btn-outline-secondary"
           >
             Ver detalles
           </Link>

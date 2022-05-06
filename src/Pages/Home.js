@@ -34,28 +34,27 @@ const Home = () => {
   });
 
   return (
-    <div className="container">
-      <div className="d-flex justify-content align-self-center">
+    <div className="container mb-5">
+      <div className="d-flex justify-content align-self-center nav-input-container">
+        <div className="mx-auto align-self-center">
+          <label className="mx-2">Buscar un personaje: </label>
+          <input type="text" onChange={handleSearch} />
+        </div>
         <NavigationBtn
           nextPage={nextPage}
           prevPage={prevPage}
           className="mx-auto align-self-center"
         />
-
-        <div className="mx-auto align-self-center" style={{ width: "15rem" }}>
-          <label>Buscar un personaje:</label>
-          <input type="text" onChange={handleSearch} />
-        </div>
       </div>
       <div className="container mt-5 ">
         {isLoading ? (
           <Loader />
         ) : (
-          <div className="row">
+          <div className="row gx-5 gy-5">
             {filteredCharacter.length === 0 && <h4>No hay resultados.</h4>}
             {filteredCharacter.map((char) => (
               <Character
-                className="col-xs-4"
+                className="col-6 col-sm-3"
                 key={char.id}
                 name={char.name}
                 image={char.image}

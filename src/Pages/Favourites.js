@@ -20,8 +20,8 @@ const Favourites = () => {
 
   return (
     <>
-      <h1 className="p-5">Mis personajes favoritos</h1>
-      <div className="container mt-5">
+      <h2 className="p-5">Mis personajes favoritos</h2>
+      <div className="container my-5">
         <div className="row">
           {favourites.length === 0 && <h4>Todavía no hay favoritos.</h4>}
           {!favourites && <Loader />}

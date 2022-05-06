@@ -32,7 +32,7 @@ const CharacterDetails = () => {
   };
 
   return (
-    <div className="container mt-5" style={{ textAlign: "center" }}>
+    <div className="container my-5 mx-10" style={{ textAlign: "center" }}>
       <ul className="list-group">
         <li className="list-group-item">
           <img src={characterData.image} alt={characterData.name} />
@@ -54,7 +54,7 @@ const CharacterDetails = () => {
         <li className="list-group-item">
           <button
             type="button"
-            className="btn btn-outline-success"
+            className="btn btn-outline-secondary"
             onClick={handlePost}
           >
             Agregar a favoritos

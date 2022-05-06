@@ -1,11 +1,12 @@
 import { Link, Outlet } from "react-router-dom";
+import logo from "../../Assets/img.jpg";
 
 const NavBar = (props) => {
   return (
     <>
       <div
         className="d-flex justify-content-between margin p-5"
-        style={{ backgroundColor: "yellowgreen" }}
+        style={{ backgroundColor: "black" }}
       >
         <div>
           <Link
@@ -16,7 +17,7 @@ const NavBar = (props) => {
               fontSize: "2rem",
             }}
           >
-            Rick and Morty
+            <img src={logo} alt="rickandmorty" className="logo" />
           </Link>
         </div>
 
