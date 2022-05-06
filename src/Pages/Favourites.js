@@ -3,6 +3,8 @@ import FavCharacter from "../Components/FavCharacter";
 import { useSelector, useDispatch } from "react-redux";
 import { setFavs, deleteFav } from "../Store/favsActions";
 import Loader from "../Components/Layout/LoaderImg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Favourites = () => {
   const dispatch = useDispatch();
@@ -16,6 +18,9 @@ const Favourites = () => {
   const handleDelete = async (id) => {
     await dispatch(deleteFav(id));
     dispatch(setFavs());
+    toast.warning("Favorito eliminado!", {
+      position: toast.POSITION.BOTTOM_LEFT,
+    });
   };
 
   return (
@@ -36,6 +41,7 @@ const Favourites = () => {
           ))}
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };
