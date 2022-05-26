@@ -66,5 +66,5 @@ https://user-images.githubusercontent.com/73915239/167064684-48f4abbf-06fc-470e-
 
 Clonar el repositorio a su pc, ejecutar `run npm install` para instalar las dependecias.
 
-Ejecutar `npm run dev`. Acceder a localhost:3000 para visualizar la app.
+Ejecutar `npm start`. Acceder a localhost:3000 para visualizar la app.
 
